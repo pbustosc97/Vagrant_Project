@@ -16,7 +16,6 @@ config.hostmanager.manage_host = true
 config.vm.provision "set_vars", type: "shell", 
   inline:
 "cd /vagrant/scripts
-   echo ' #$DBHOSTNAME'
   ./set_var.sh #$DBHOSTNAME #$MEMCACHEHOSTNAME #$RABBITHOSTNAME #$TOMCATHOSTNAME #$NGINXHOSTNAME
 "
 ##DB VM Block
